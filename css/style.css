@@ -1,0 +1,201 @@
+@import url("general.css");
+@import url("fonts.css");
+@import url("mobile.css");
+
+
+/*******
+HEADER
+********/
+header{
+
+    background-color: rgb(141, 170, 145);
+}
+
+nav h1{
+    font-size: 50px;
+}
+
+nav{
+    background-color: #788475;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0 15px 0;
+    color: black;
+    font-weight: bold;
+}
+
+figure{
+    width: 50%;
+    margin: auto;
+}
+
+
+/********
+MAIN
+********/
+
+main{
+    background-color: #5E5D5C;
+}
+main h1{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.blog-container{
+    width: 50%;
+    margin: auto;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    justify-content: center;
+}
+.card{
+    border: 1px solid grey;
+    padding: 10px;
+    margin:10px;
+}
+
+.card a{
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    background-color: brown;
+    border-radius: 10%;
+    border: 1px solid #fff;
+    transition: 0.2s;
+}
+
+.card a:hover{
+    background-color: crimson;
+}
+
+#newsletter{
+    background-color: #28112B;
+    color: #fff;
+    ;
+}
+
+#newsletter .container{
+    padding: 50px;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.side{
+    align-self: center;
+}
+input{
+    margin: 5px;
+}
+
+/*******
+FOOTER
+*******/
+footer{
+    background-color: rgb(141, 170, 145);
+}
+
+/*****
+BLOGSITE
+*******/
+
+/*******
+MAIN
+********/
+
+#main-blog{
+    
+    display: grid;
+    grid-template-areas: 
+    "aside-left content aside-right";
+}
+
+#main-blog li {
+    padding: 10px;
+}
+
+#left{
+    background-color: rgb(141, 170, 145);
+    grid-area: aside-left;
+    justify-self: center;
+    padding: 50px;
+}
+
+#blog-content{
+    grid-area: content;
+    
+}
+
+#right{
+    background-color: rgb(141, 170, 145);
+    grid-area: aside-right;
+    justify-self: center;
+    padding: 50px;
+}
+
+article{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width:768px) {
+
+    nav{
+        width: 100%;
+    }
+
+    .blog-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+    .container{
+        flex-direction: column;
+    }
+
+    form > input{
+        width: 100%;
+    }
+
+    #main-blog{
+    
+        display: grid;
+        grid-template-areas: 
+        "aside-left content";
+    }
+
+    #right{
+        display: none;
+    }
+    
+}
+
+
+
