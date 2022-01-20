@@ -140,7 +140,7 @@ MAIN
 ********/
 
 #main-blog{
-    
+    height: 100vh;
     display: grid;
     grid-template-areas: 
     "aside-left content aside-right";
