@@ -1,2 +1,75 @@
+@media screen and (max-width:768px) {
+
+    header{
+    width: 100%;
+    }
+
+    nav{
+        justify-content: space-around
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        padding: 0 5px;;
+        margin: 0;
+       
+        
+        
+    }
+    #main-blog{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .blog-container {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 40px;
+        justify-content: center;
+    }
 
 
+    .container{
+        flex-direction: column;
+    }
+
+    form > input{
+        width: 100%;
+    }
+
+    #right{
+        display: none;
+    }
+    article{
+        display:flex;
+        flex-direction: column;
+        background-color: #5E5D5C;
+        
+    }
+    #left{
+        width: 100vw;
+        padding: 0;
+    }
+   
+    #left ul{
+        display: flex;
+                
+    }
+
+    #left ul li{
+        display: flex;
+        height: 100px;
+        width: 100px;
+    }
+
+    #left ul a{
+        padding: 10px;
+        align-self: center;
+        margin: 10px;
+        background-color: #28112B;
+        border-radius: 50%;
+        color: #fff;
+    }
+}
