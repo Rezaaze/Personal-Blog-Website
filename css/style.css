@@ -17,7 +17,7 @@ nav h1{
 
 nav{
     background-color: #788475;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     margin: auto;
     display: flex;
@@ -140,57 +140,74 @@ MAIN
 ********/
 
 #main-blog{
-    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-areas: 
-    "aside-left content aside-right";
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 #main-blog li {
-    padding: 10px;
+    padding: 5px;
 }
 
 #left{
     background-color: rgb(141, 170, 145);
-    grid-area: aside-left;
     justify-self: center;
     padding: 50px;
 }
 
 #blog-content{
-    grid-area: content;
+    
     
 }
 
 #right{
     background-color: rgb(141, 170, 145);
-    grid-area: aside-right;
     justify-self: center;
     padding: 50px;
+}
 }
 
 article{
     width: 50%;
     text-align: center;
     margin: auto;
+
+}
+
+.author-info{
+    text-align: center;
 }
 
 @media screen and (max-width:768px) {
 
+    header{
+    width: 100%;
+    }
+
     nav{
-        width: 100%;
+        justify-content: space-around
     }
 
     nav ul li a{
         font-size: 20px;
-        padding: 0 15px 0;
-        margin: 0 10px 0;
+        padding: 0 5px;;
+        margin: 0;
+       
+        
         
     }
-    .blog-container{
+    #main-blog{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .blog-container {
+
         width: 100%;
         display: grid;
         grid-template-columns: auto;
+        grid-gap: 40px;
+        justify-content: center;
     }
 
 
@@ -202,17 +219,39 @@ article{
         width: 100%;
     }
 
-    #main-blog{
-    
-        display: grid;
-        grid-template-areas: 
-        "aside-left content";
-    }
-
     #right{
         display: none;
     }
-    
+    article{
+        display:flex;
+        flex-direction: column;
+        background-color: #5E5D5C;
+        
+    }
+    #left{
+        width: 100vw;
+        padding: 0;
+    }
+   
+    #left ul{
+        display: flex;
+                
+    }
+
+    #left ul li{
+        display: flex;
+        height: 100px;
+        width: 100px;
+    }
+
+    #left ul a{
+        padding: 10px;
+        align-self: center;
+        margin: 10px;
+        background-color: #28112B;
+        border-radius: 50%;
+        color: #fff;
+    }
 }
 
 
